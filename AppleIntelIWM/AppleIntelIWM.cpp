@@ -1827,7 +1827,8 @@ IOReturn AppleIntelIWM::allocRxRing(struct iwm_drv *driver, struct iwm_rx_ring *
             goto fail;
         }
     }
-    ring->freeDescDMA->cmd->synchronize(kIODirectionOut);
+    
+    ring->freeDescDMA->cmd->writeBytes(0, ring->desc, size);
     
     return KERN_SUCCESS;
 fail:
@@ -2180,15 +2181,11 @@ IOReturn AppleIntelIWM::rxAddBuf(struct iwm_drv *driver, int size, int idx)
     struct iwm_rx_ring *ring = &driver->rxq;
     struct iwm_rx_data *data = &ring->data[idx];
     
-    mbuf_t packet;
-    unsigned int chunks;
+    mbuf_t packet = allocatePacket(size);
     
-    if(mbuf_allocpacket(MBUF_DONTWAIT, size, &chunks, &packet) != KERN_SUCCESS) {
+    if(!packet) {
         IWM_KERNLOG("Alloc packet failed!\n");
         return KERN_FAILURE;
-    }
-    if(chunks > 1) {
-        return EINVAL;
     }
     
     UInt32 pAddr = mBufDmaMap(driver, data->m);
@@ -2196,7 +2193,7 @@ IOReturn AppleIntelIWM::rxAddBuf(struct iwm_drv *driver, int size, int idx)
     data->m = packet;
     data->pAddr = pAddr;
     
-    ((UInt32*)ring->desc)[idx] = pAddr >> 8; //come back to this
+    ((UInt32*)ring->desc)[idx] = pAddr >> 8;
     
     return KERN_SUCCESS;
 }
@@ -2527,6 +2524,7 @@ UInt32 AppleIntelIWM::mBufDmaMap(struct iwm_drv *driver, mbuf_t m)
 {
     IOPhysicalSegment rxSeg;
     driver->mBufCursor->getPhysicalSegments(m, &rxSeg, 1);
+    
     return rxSeg.location;
 }
 
