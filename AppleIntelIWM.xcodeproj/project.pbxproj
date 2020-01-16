@@ -7,13 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63E3BA662351E072008F2DFF /* AppleIntelIWM.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 63E3BA652351E072008F2DFF /* AppleIntelIWM.hpp */; };
+		6303AFAF23B432B600530612 /* AppleIntelIWM.h in Headers */ = {isa = PBXBuildFile; fileRef = 6303AFAE23B432B600530612 /* AppleIntelIWM.h */; };
+		632A8C7223BDAB0D00E38068 /* Notification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 632A8C7123BDAB0D00E38068 /* Notification.cpp */; };
+		632A8C7423BDAB8100E38068 /* iwm_notif_wait.h in Headers */ = {isa = PBXBuildFile; fileRef = 632A8C7323BDAB8100E38068 /* iwm_notif_wait.h */; };
+		632AF3DB23BDF4D6003B5C52 /* iwm_phy_db.h in Headers */ = {isa = PBXBuildFile; fileRef = 632AF3DA23BDF4D6003B5C52 /* iwm_phy_db.h */; };
+		632AF3DD23BDF5FF003B5C52 /* Phy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 632AF3DC23BDF5FF003B5C52 /* Phy.cpp */; };
+		633A89E423B60F41005015BF /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 633A89E323B60F41005015BF /* Utils.cpp */; };
+		634A4FFB23700EF1002DF722 /* iwm3160fw.ucode in Resources */ = {isa = PBXBuildFile; fileRef = 634A4FF623700EF1002DF722 /* iwm3160fw.ucode */; };
+		634A4FFC23700EF1002DF722 /* iwm7260fw.ucode in Resources */ = {isa = PBXBuildFile; fileRef = 634A4FF723700EF1002DF722 /* iwm7260fw.ucode */; };
+		634A4FFD23700EF1002DF722 /* iwm7265Dfw.ucode in Resources */ = {isa = PBXBuildFile; fileRef = 634A4FF823700EF1002DF722 /* iwm7265Dfw.ucode */; };
+		634A4FFE23700EF1002DF722 /* iwm7265fw.ucode in Resources */ = {isa = PBXBuildFile; fileRef = 634A4FF923700EF1002DF722 /* iwm7265fw.ucode */; };
+		634A4FFF23700EF1002DF722 /* iwm8000Cfw.ucode in Resources */ = {isa = PBXBuildFile; fileRef = 634A4FFA23700EF1002DF722 /* iwm8000Cfw.ucode */; };
+		6358147023C6903000185BFC /* Fw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6358146F23C6903000185BFC /* Fw.cpp */; };
+		6361216F23C53C14008B1273 /* SmartFifo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6361216E23C53C14008B1273 /* SmartFifo.cpp */; };
+		636DB1E22370D707007FFDDC /* if_iwm_fw.h in Headers */ = {isa = PBXBuildFile; fileRef = 636DB1E12370D707007FFDDC /* if_iwm_fw.h */; };
+		6370678823B8BEC100D1602E /* AppleIntelWifi80211.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6370678723B8BEC100D1602E /* AppleIntelWifi80211.cpp */; };
+		63802C422352D3560049C053 /* Trans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63802C412352D3560049C053 /* Trans.cpp */; };
+		63CFB6842353312200204E5C /* iwm_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 63CFB6812353312200204E5C /* iwm_config.h */; };
+		63CFB6852353312200204E5C /* iwm_var.h in Headers */ = {isa = PBXBuildFile; fileRef = 63CFB6822353312200204E5C /* iwm_var.h */; };
+		63CFB6862353312200204E5C /* iwm_reg.h in Headers */ = {isa = PBXBuildFile; fileRef = 63CFB6832353312200204E5C /* iwm_reg.h */; };
 		63E3BA682351E072008F2DFF /* AppleIntelIWM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63E3BA672351E072008F2DFF /* AppleIntelIWM.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6303AFAE23B432B600530612 /* AppleIntelIWM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleIntelIWM.h; sourceTree = "<group>"; };
+		632A8C7123BDAB0D00E38068 /* Notification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Notification.cpp; sourceTree = "<group>"; };
+		632A8C7323BDAB8100E38068 /* iwm_notif_wait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iwm_notif_wait.h; sourceTree = "<group>"; };
+		632AF3DA23BDF4D6003B5C52 /* iwm_phy_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iwm_phy_db.h; sourceTree = "<group>"; };
+		632AF3DC23BDF5FF003B5C52 /* Phy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Phy.cpp; sourceTree = "<group>"; };
+		633A89E323B60F41005015BF /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		634A4FF623700EF1002DF722 /* iwm3160fw.ucode */ = {isa = PBXFileReference; lastKnownFileType = file; name = iwm3160fw.ucode; path = firmware/iwm3160fw.ucode; sourceTree = "<group>"; };
+		634A4FF723700EF1002DF722 /* iwm7260fw.ucode */ = {isa = PBXFileReference; lastKnownFileType = file; name = iwm7260fw.ucode; path = firmware/iwm7260fw.ucode; sourceTree = "<group>"; };
+		634A4FF823700EF1002DF722 /* iwm7265Dfw.ucode */ = {isa = PBXFileReference; lastKnownFileType = file; name = iwm7265Dfw.ucode; path = firmware/iwm7265Dfw.ucode; sourceTree = "<group>"; };
+		634A4FF923700EF1002DF722 /* iwm7265fw.ucode */ = {isa = PBXFileReference; lastKnownFileType = file; name = iwm7265fw.ucode; path = firmware/iwm7265fw.ucode; sourceTree = "<group>"; };
+		634A4FFA23700EF1002DF722 /* iwm8000Cfw.ucode */ = {isa = PBXFileReference; lastKnownFileType = file; name = iwm8000Cfw.ucode; path = firmware/iwm8000Cfw.ucode; sourceTree = "<group>"; };
+		6358146F23C6903000185BFC /* Fw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fw.cpp; sourceTree = "<group>"; };
+		6361216E23C53C14008B1273 /* SmartFifo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SmartFifo.cpp; sourceTree = "<group>"; };
+		636DB1E12370D707007FFDDC /* if_iwm_fw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_iwm_fw.h; sourceTree = "<group>"; };
+		6370678723B8BEC100D1602E /* AppleIntelWifi80211.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppleIntelWifi80211.cpp; sourceTree = "<group>"; };
+		63779C63235D967A00A4AF53 /* apple80211 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = apple80211; sourceTree = "<group>"; };
+		63802C412352D3560049C053 /* Trans.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Trans.cpp; sourceTree = "<group>"; };
+		63CFB6812353312200204E5C /* iwm_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iwm_config.h; sourceTree = "<group>"; };
+		63CFB6822353312200204E5C /* iwm_var.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iwm_var.h; sourceTree = "<group>"; };
+		63CFB6832353312200204E5C /* iwm_reg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iwm_reg.h; sourceTree = "<group>"; };
 		63E3BA622351E072008F2DFF /* AppleIntelIWM.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleIntelIWM.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		63E3BA652351E072008F2DFF /* AppleIntelIWM.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AppleIntelIWM.hpp; sourceTree = "<group>"; };
 		63E3BA672351E072008F2DFF /* AppleIntelIWM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppleIntelIWM.cpp; sourceTree = "<group>"; };
 		63E3BA692351E072008F2DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -29,6 +66,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		634A500023700EFA002DF722 /* fw */ = {
+			isa = PBXGroup;
+			children = (
+				634A4FF623700EF1002DF722 /* iwm3160fw.ucode */,
+				634A4FF723700EF1002DF722 /* iwm7260fw.ucode */,
+				634A4FF823700EF1002DF722 /* iwm7265Dfw.ucode */,
+				634A4FF923700EF1002DF722 /* iwm7265fw.ucode */,
+				634A4FFA23700EF1002DF722 /* iwm8000Cfw.ucode */,
+			);
+			name = fw;
+			sourceTree = "<group>";
+		};
+		63CFB6802353311200204E5C /* iwm */ = {
+			isa = PBXGroup;
+			children = (
+				63CFB6812353312200204E5C /* iwm_config.h */,
+				63CFB6832353312200204E5C /* iwm_reg.h */,
+				63CFB6822353312200204E5C /* iwm_var.h */,
+				636DB1E12370D707007FFDDC /* if_iwm_fw.h */,
+				632A8C7323BDAB8100E38068 /* iwm_notif_wait.h */,
+				632AF3DA23BDF4D6003B5C52 /* iwm_phy_db.h */,
+			);
+			path = iwm;
+			sourceTree = "<group>";
+		};
 		63E3BA582351E072008F2DFF = {
 			isa = PBXGroup;
 			children = (
@@ -48,8 +110,18 @@
 		63E3BA642351E072008F2DFF /* AppleIntelIWM */ = {
 			isa = PBXGroup;
 			children = (
-				63E3BA652351E072008F2DFF /* AppleIntelIWM.hpp */,
+				634A500023700EFA002DF722 /* fw */,
+				63779C63235D967A00A4AF53 /* apple80211 */,
+				63CFB6802353311200204E5C /* iwm */,
 				63E3BA672351E072008F2DFF /* AppleIntelIWM.cpp */,
+				6303AFAE23B432B600530612 /* AppleIntelIWM.h */,
+				63802C412352D3560049C053 /* Trans.cpp */,
+				633A89E323B60F41005015BF /* Utils.cpp */,
+				632A8C7123BDAB0D00E38068 /* Notification.cpp */,
+				632AF3DC23BDF5FF003B5C52 /* Phy.cpp */,
+				6361216E23C53C14008B1273 /* SmartFifo.cpp */,
+				6358146F23C6903000185BFC /* Fw.cpp */,
+				6370678723B8BEC100D1602E /* AppleIntelWifi80211.cpp */,
 				63E3BA692351E072008F2DFF /* Info.plist */,
 			);
 			path = AppleIntelIWM;
@@ -62,7 +134,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E3BA662351E072008F2DFF /* AppleIntelIWM.hpp in Headers */,
+				632A8C7423BDAB8100E38068 /* iwm_notif_wait.h in Headers */,
+				63CFB6842353312200204E5C /* iwm_config.h in Headers */,
+				6303AFAF23B432B600530612 /* AppleIntelIWM.h in Headers */,
+				63CFB6862353312200204E5C /* iwm_reg.h in Headers */,
+				63CFB6852353312200204E5C /* iwm_var.h in Headers */,
+				636DB1E22370D707007FFDDC /* if_iwm_fw.h in Headers */,
+				632AF3DB23BDF4D6003B5C52 /* iwm_phy_db.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +202,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634A4FFD23700EF1002DF722 /* iwm7265Dfw.ucode in Resources */,
+				634A4FFC23700EF1002DF722 /* iwm7260fw.ucode in Resources */,
+				634A4FFB23700EF1002DF722 /* iwm3160fw.ucode in Resources */,
+				634A4FFF23700EF1002DF722 /* iwm8000Cfw.ucode in Resources */,
+				634A4FFE23700EF1002DF722 /* iwm7265fw.ucode in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63802C422352D3560049C053 /* Trans.cpp in Sources */,
+				6370678823B8BEC100D1602E /* AppleIntelWifi80211.cpp in Sources */,
+				632A8C7223BDAB0D00E38068 /* Notification.cpp in Sources */,
+				632AF3DD23BDF5FF003B5C52 /* Phy.cpp in Sources */,
+				6358147023C6903000185BFC /* Fw.cpp in Sources */,
+				633A89E423B60F41005015BF /* Utils.cpp in Sources */,
 				63E3BA682351E072008F2DFF /* AppleIntelIWM.cpp in Sources */,
+				6361216F23C53C14008B1273 /* SmartFifo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,10 +279,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.12;
 			};
 			name = Debug;
 		};
@@ -238,23 +329,32 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.12;
 			};
 			name = Release;
 		};
 		63E3BA6D2351E072008F2DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEVELOPMENT_TEAM = WK3CSB596F;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = AppleIntelIWM/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULE_NAME = org.opentools.AppleIntelIWM;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.opentools.AppleIntelIWM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx10.11;
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -262,14 +362,22 @@
 		63E3BA6E2351E072008F2DFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEVELOPMENT_TEAM = WK3CSB596F;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				INFOPLIST_FILE = AppleIntelIWM/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULE_NAME = org.opentools.AppleIntelIWM;
 				MODULE_VERSION = 1.0.0d1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.opentools.AppleIntelIWM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx10.11;
+				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
